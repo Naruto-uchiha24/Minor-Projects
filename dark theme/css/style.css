@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    text-align: center;
+    padding: 5rem;
+
+    transition: background 0.3s linear;/*these two lines are added at the last*/
+    color 0.3s linear;
+}
+
+body.dark{
+    background-color: #1f1f1f;
+    color:white;
+}
+
+.toggle-container{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+label{
+    background-color: rebeccapurple;
+   
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.3s linear;
+}
+
+body.dark label{
+    background-color: #fff;
+}
+
+input{
+    visibility: hidden;
+}
